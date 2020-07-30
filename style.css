@@ -16,6 +16,7 @@
                 font-size: 12pt;
                 color: rgb(105, 105, 105);
                 font-weight: lighter;
+                margin-top: 50px;
             }
             
             button {
@@ -73,4 +74,45 @@
             #tableAlunos th {
                 color: rgb(21, 126, 158);
                 font-weight: lighter;
+            }
+            
+            #tableAlunos:hover {
+                background-color: rgba(199, 242, 195, 0.2);
+            }
+            
+            .textoOnMouseOver:hover:after {
+                content: attr(data-hover);
+                font-size: 14pt;
+                position: relative;
+                margin-left: 400px;
+                color: rgb(27, 201, 11);
+                font-weight: bold;
+            }
+            
+            .textoMouseOver:hover:after {
+                content: attr(data-hover);
+                font-size: 12pt;
+                position: absolute;
+                margin-left: -100px;
+                margin-top: 55px;
+                color: rgb(27, 201, 11);
+                background-color: white;
+                padding: 8px;
+                border-radius: 8px;
+                box-shadow: rgb(228, 217, 217) 5px 5px;
+                font-weight: normal;
+            }
+            
+            .textoMouseOverNota:hover:after {
+                content: attr(data-hover);
+                font-size: 12pt;
+                position: absolute;
+                margin-left: -125px;
+                margin-top: 65px;
+                color: rgb(27, 201, 11);
+                background-color: white;
+                padding: 8px;
+                border-radius: 8px;
+                box-shadow: rgb(228, 217, 217) 5px 5px;
+                font-weight: normal;
             }

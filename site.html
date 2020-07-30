@@ -14,16 +14,16 @@
         <form action="" id="guardarNotas">
             <table>
                 <tr>
-                    <th>Nome do(a) estudante</th>
-                    <th>Primeiro bimestre</th>
-                    <th>Segundo bimestre</th>
-                    <th>Terceiro bimestre</th>
-                    <th>Quarto bimestre</th>
+                    <th class="textoMouseOver" data-hover="Conforme matrícula escolar">Nome do(a) estudante</th>
+                    <th class="textoMouseOverNota" data-hover="Nota do bimestre">Primeiro bimestre</th>
+                    <th class="textoMouseOverNota" data-hover="Nota do bimestre">Segundo bimestre</th>
+                    <th class="textoMouseOverNota" data-hover="Nota do bimestre">Terceiro bimestre</th>
+                    <th class="textoMouseOverNota" data-hover="Nota do bimestre">Quarto bimestre</th>
                 </tr>
 
                 <tr>
                     <td><input type="text" name="nomeAluno" id="nomeAluno"></td>
-                    <td ><input type="number" name="nota1Bi" id="nota1Bi"></td>
+                    <td><input type="number" name="nota1Bi" id="nota1Bi"></td>
                     <td><input type="number" name="nota2Bi" id="nota2Bi"></td>
                     <td><input type="number" name="nota3Bi" id="nota3Bi"></td>
                     <td><input type="number" name="nota4Bi" id="nota4Bi"></td>
@@ -34,8 +34,10 @@
             </table>
         </form><br>
 
-        <p id="pObs">Os dados computados serão apresentados abaixo</p>
-        <table id="tableAlunos"></table>
+        <div class="textoOnMouseOver" data-hover="Dados já inseridos no sistema.">
+            <p id="pObs">Os dados computados serão apresentados abaixo</p>
+            <table id="tableAlunos"></table>
+        </div>
 
     </body>
 

@@ -96,9 +96,10 @@ function mostrarAlunos() {
             for (j = 0; j < alunosMaiorMedia.length; j++) {
                 if (alunosMaiorMedia[j].media < maiorMedia) {
                     alunosMaiorMedia.splice(j, 1); //remore o aluno com a menor media no array alunosMaiorMedia[]
+                } else {
+                    maiorMedia = alunosMaiorMedia[j].media
                 }
             }
-
         }
     }
 
@@ -115,9 +116,9 @@ function mostrarAlunos() {
 
         //destaca o nome, media e aprovacao do aluno com maior media da turma
         if (alunosMaiorMedia.includes(alunos[i])) {
-            cell0.innerHTML = '<font color=\'#f11cf1\'>' + alunos[i].nome + '</font>';
-            cell5.innerHTML = '<font color=\'#f11cf1\'>' + alunos[i].media + '</font>';
-            cell6.innerHTML = '<font color=\'#f11cf1\'>' + alunos[i].resAprovacao + '</font>';
+            cell0.innerHTML = '<font color=\'#1BC90B\'>' + alunos[i].nome + '</font>';
+            cell5.innerHTML = '<font color=\'#1BC90B\'>' + alunos[i].media + '</font>';
+            cell6.innerHTML = '<font color=\'#1BC90B\'>' + alunos[i].resAprovacao + '</font>';
         } else {
             cell0.innerHTML = alunos[i].nome;
             cell5.innerHTML = alunos[i].media;
